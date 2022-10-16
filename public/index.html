@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="canonical" href="https://www.glance-jw.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+
+    <meta name="author" content="Jinwon Kim" />
+    <meta name="description" content="프론트엔드 개발자 김진원의 포트폴리오 사이트 입니다." />
+    <meta
+      name="keywords"
+      content="javascript, react, antd, nodejs, typescript, frontend, front-end, backend, back-end, Fullstack, developer, 웹개발자, 프론트엔드, 백엔드, 코딩, 프로그래밍, 소프트웨어, 개발자포트폴리오, 프로그래머, 웹개발자포트폴리오, 스타트업개발자"
+    />
+    <meta property="og:url" content="https://www.glance-jw.com" />
+    <meta property="og:image" content="%PUBLIC_URL%/favicon.ico" />
+    <meta property="og:site_name" content="김진원 | 프론트엔드 개발자 사이트" />
+    <meta property="og:description" content="JW" />
+    <meta property="og:title" content="김진원 | 프론트엔드 개발자 포트폴리오" />
+
+    <meta name="twitter:title" content="김진원 | 프론트엔드 개발자 포트폴리오" />
+    <meta name="twitter:description" content="김진원 | 프론트엔드 개발자 사이트" />
+    <meta name="twitter:image" content="https://www.glance-jw.com" />
+    <meta name="twitter:card" content="summary" />
+
+  
+    <meta name="naver-site-verification" content="297c0ddbfbb757da18552159beec85c5d48c3238" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <title>프론트엔드 개발자 김진원 Kim Jin Won | FrontEnd Developer</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      h1 {
+        font-family: "Lato", sans-serif;
+        font-weight: 500;
+        letter-spacing: 2px;
+        font-size: 48px;
+      }
+      p {
+        font-family: "Lato", sans-serif;
+        letter-spacing: 1px;
+        font-size: 14px;
+        color: #333333;
+      }
+      .loading-text-paragraph {
+        font-weight: 400;
+        line-height: 24px;
+        margin: 0;
+        font-family: -apple-system, "Helvetica Neue", sans-serif;
+        color: white;
+        text-shadow: 1px 1px 13px rgb(0 0 0 / 50%);
+      }
+      .svgLoader {
+        animation: spin 1s ease-out infinite;
+      }
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .box-container {
+        text-align: center;
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #24272b;
+      }
+      .release {
+        letter-spacing: 1px;
+        font-size: 14px;
+        color: rgba(255,255, 255,0.55);
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>Hello Im JW.</noscript>
+    <div id="root">
+      <!-- <div class="header"> -->
+        <div class="box-container flex">
+            <div style="position: absolute; top: calc(50vh - 112.5px); left: calc(50vw - 150px)">
+              <lottie-player
+                src="%PUBLIC_URL%/cubes.json"
+                background="transparent"
+                style="width: 300px; height: 225px"
+                speed="1"
+                loop
+                autoplay
+              >
+              </lottie-player>
+              <div>
+                <p class="loading-text-paragraph">
+                  <svg class="svgLoader" viewBox="0 0 1024 1024" width="0.75em" height="0.75em" aria-hidden="true">
+                    <path
+                      fill="lightblue"
+                      d="M988 548c-19.9 0-36-16.1-36-36 0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 0 0-94.3-139.9 437.71 437.71 0 0 0-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.3C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3.1 19.9-16 36-35.9 36z"
+                    />
+                  </svg>   개발자 김진원의
+                </p>
+                <p class="loading-text-paragraph">포트폴리오 사이트</p>
+                <p class="release">JW | 2020</p>
+              </div>
+            </div>
+        <!-- </div> -->
+    </div>
+    <!-- Channel Plugin Scripts -->
+    <script>
+      (function() {
+        var w = window;
+        if (w.ChannelIO) {
+          return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+        }
+        var ch = function() {
+          ch.c(arguments);
+        };
+        ch.q = [];
+        ch.c = function(args) {
+          ch.q.push(args);
+        };
+        w.ChannelIO = ch;
+        function l() {
+          if (w.ChannelIOInitialized) {
+            return;
+          }
+          w.ChannelIOInitialized = true;
+          var s = document.createElement('script');
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+          s.charset = 'UTF-8';
+          var x = document.getElementsByTagName('script')[0];
+          x.parentNode.insertBefore(s, x);
+        }
+        if (document.readyState === 'complete') {
+          l();
+        } else if (window.attachEvent) {
+          window.attachEvent('onload', l);
+        } else {
+          window.addEventListener('DOMContentLoaded', l, false);
+          window.addEventListener('load', l, false);
+        }
+      })();
+      ChannelIO('boot', {
+        "pluginKey": '%REACT_APP_CHANNEL_IO_KEY%'
+      });
+    </script>
+<!-- End Channel Plugin -->       
+  </body>
+</html>

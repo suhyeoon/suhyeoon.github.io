@@ -1,0 +1,72 @@
+body.light {
+  background: #f0f2f5;
+  transition: background 0.3s ease 0s;
+  color: rgba(0, 0, 0, 0.85);
+  //브라우저 스크롤 요소
+  &::-webkit-scrollbar {
+    width: 2px !important;
+    height: 6px !important;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: transparent !important;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 8px !important;
+    background-color: rgba(0, 0, 0, 0.65) !important;
+  }
+  &::-webkit-scrollbar-button {
+    width: 0 !important;
+    height: 0 !important;
+  }
+  .ant-progress-inner {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 0px !important;
+  }
+  .ant-drawer {
+    ::-webkit-scrollbar {
+      width: 2px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      border-radius: 8px;
+      background-color: gray;
+    }
+    ::-webkit-scrollbar-button {
+      width: 0;
+      height: 0;
+    }
+  }
+  .ant-progress-steps-item {
+    background: rgba(0, 0, 0, 0.08);
+  }
+
+  .ant-card.glass {
+    background: rgba(252, 252, 252, 0.55) !important;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+
+    // background: rgba(255, 255, 255, 0.45) !important;
+    // box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+    // backdrop-filter: blur(12px) !important;
+    // -webkit-backdrop-filter: blur(12px) !important;
+    // border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  }
+  & .ant-modal {
+    & .ant-modal-content {
+      background-color: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(14px);
+      border-radius: 20px;
+      & .ant-modal-header {
+        border-bottom: transparent;
+        background-color: transparent;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+    }
+  }
+}
